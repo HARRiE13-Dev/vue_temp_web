@@ -4,7 +4,7 @@ import Index from './pages/Index.vue';
 import Landing from './pages/Landing.vue';
 import Login from './pages/Login.vue';
 import Profile from './pages/Profile.vue';
-import Compo from './pages/Compo.vue';
+
 import MainNavbar from './layout/MainNavbar.vue';
 import MainFooter from './layout/MainFooter.vue';
 
@@ -22,15 +22,7 @@ export default new Router({
         footer: { backgroundColor: 'black' }
       }
     },
-    {
-      path: '/compo',
-      name: 'compo',
-      components: { default: Compo, header: MainNavbar, footer: MainFooter },
-      props: {
-        header: { colorOnScroll: 400 },
-        footer: { backgroundColor: 'black' }
-      }
-    },
+    
     {
       path: '/landing',
       name: 'landing',
